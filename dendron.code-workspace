@@ -1,6 +1,10 @@
 {
     "folders": [
         {
+            "path": "kevin-public/vault",
+            "name": "kevin-public"
+        },
+        {
             "path": "kevin-blog/vault",
             "name": "kevin-blog"
         }

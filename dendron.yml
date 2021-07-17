@@ -2,6 +2,10 @@ version: 1
 vaults:
     -
         fsPath: vault
+        workspace: kevin-public
+        name: kevin-public
+    -
+        fsPath: vault
         workspace: kevin-blog
         name: kevin-blog
 useFMTitle: true
@@ -22,14 +26,24 @@ journal:
 site:
     copyAssets: true
     siteHierarchies:
-        - root
+        - home
+        - blog
     siteRootDir: docs
     usePrettyRefs: true
     title: Dendron
     description: Personal knowledge space
+    duplicateNoteBehavior:
+        action: useVault
+        payload:
+            - kevin-public
+            - kevin-blog
 initializeRemoteVaults: true
 workspaces:
     kevin-blog:
         remote:
             type: git
             url: 'https://github.com/kevinslin/kevin-blog.git'
+    kevin-public:
+        remote:
+            type: git
+            url: 'https://github.com/kevinslin/kevin-public.git'
