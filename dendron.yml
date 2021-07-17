@@ -1,0 +1,35 @@
+version: 1
+vaults:
+    -
+        fsPath: vault
+        workspace: kevin-blog
+        name: kevin-blog
+useFMTitle: true
+useNoteTitleForLink: true
+noAutoCreateOnDefinition: true
+noLegacyNoteRef: true
+noXVaultWikiLink: true
+lookupConfirmVaultOnCreate: false
+mermaid: true
+useKatex: true
+autoFoldFrontmatter: true
+journal:
+    dailyDomain: daily
+    name: journal
+    dateFormat: y.MM.dd
+    addBehavior: childOfDomain
+    firstDayOfWeek: 1
+site:
+    copyAssets: true
+    siteHierarchies:
+        - root
+    siteRootDir: docs
+    usePrettyRefs: true
+    title: Dendron
+    description: Personal knowledge space
+initializeRemoteVaults: true
+workspaces:
+    kevin-blog:
+        remote:
+            type: git
+            url: 'https://github.com/kevinslin/kevin-blog.git'
