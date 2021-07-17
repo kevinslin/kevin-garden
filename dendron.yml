@@ -4,10 +4,12 @@ vaults:
         fsPath: vault
         workspace: kevin-public
         name: kevin-public
+        sync: sync
     -
         fsPath: vault
         workspace: kevin-blog
         name: kevin-blog
+        sync: sync
 useFMTitle: true
 useNoteTitleForLink: true
 noAutoCreateOnDefinition: true
@@ -27,7 +29,9 @@ site:
     copyAssets: true
     siteHierarchies:
         - home
+        - daily
         - blog
+        - r
     siteRootDir: docs
     usePrettyRefs: true
     title: Dendron
