@@ -32,10 +32,15 @@ site:
         - daily
         - blog
         - r
+        - books
     siteRootDir: docs
     usePrettyRefs: true
-    title: Dendron
-    description: Personal knowledge space
+    logo: assets/images/bio-photo.jpg
+    title: Kevin's Garden
+    description: Kevin is working on creating better tools for thought
+    twitter: kevins8
+    author: Kevin S Lin
+    siteUrl: 'https://www.kevinslin.com'
     duplicateNoteBehavior:
         action: useVault
         payload:
