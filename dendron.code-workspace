@@ -7,6 +7,9 @@
         {
             "path": "kevin-blog/vault",
             "name": "kevin-blog"
+        },
+        {
+            "path": "."
         }
     ],
     "settings": {
