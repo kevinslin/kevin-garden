@@ -1,6 +1,10 @@
 version: 1
 vaults:
     -
+        fsPath: templates
+        seed: dendron.templates
+        name: dendron.templates
+    -
         fsPath: vault
         workspace: kevin-public
         name: kevin-public
@@ -46,6 +50,7 @@ site:
         payload:
             - kevin-public
             - kevin-blog
+            - dendron.templates
 initializeRemoteVaults: true
 workspaces:
     kevin-blog:
@@ -56,3 +61,5 @@ workspaces:
         remote:
             type: git
             url: 'https://github.com/kevinslin/kevin-public.git'
+seeds:
+    dendron.templates: {}

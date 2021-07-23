@@ -1,6 +1,10 @@
 {
     "folders": [
         {
+            "path": "seeds/dendron.templates/templates",
+            "name": "dendron.templates"
+        },
+        {
             "path": "kevin-public/vault",
             "name": "kevin-public"
         },
