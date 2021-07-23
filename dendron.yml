@@ -4,6 +4,7 @@ vaults:
         fsPath: templates
         seed: dendron.templates
         name: dendron.templates
+        sync: noCommit
     -
         fsPath: vault
         workspace: kevin-public
