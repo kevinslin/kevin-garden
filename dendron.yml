@@ -38,6 +38,7 @@ site:
         - blog
         - r
         - books
+        - proj
     siteRootDir: docs
     usePrettyRefs: true
     logo: assets/images/bio-photo.jpg
