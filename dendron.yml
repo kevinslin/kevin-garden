@@ -23,7 +23,10 @@ noXVaultWikiLink: true
 lookupConfirmVaultOnCreate: false
 mermaid: true
 useKatex: true
-autoFoldFrontmatter: true
+autoFoldFrontmatter: false
+dev:
+    enableWebUI: true
+    enablePreviewV2: true
 journal:
     dailyDomain: daily
     name: journal
@@ -39,6 +42,7 @@ site:
         - r
         - books
         - proj
+        - tags
     siteRootDir: docs
     usePrettyRefs: true
     logo: assets/images/bio-photo.jpg
@@ -65,3 +69,8 @@ workspaces:
             url: 'https://github.com/kevinslin/kevin-public.git'
 seeds:
     dendron.templates: {}
+scratch:
+    name: scratch
+    dateFormat: y.MM.dd.HHmmss
+    addBehavior: asOwnDomain
+dendronVersion: 0.52.0
