@@ -6,6 +6,7 @@ frontend:
         - yarn
     build:
       commands: 
+        - "rm -rf .next"
         - "(test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git clean -f && git pull) || (echo 'init dendron next' && npx dendron publish init)"
         - "(echo 'init dendron next' && npx dendron publish init)"
         - "echo 'install deps...' && cd .next && yarn && cd .."
