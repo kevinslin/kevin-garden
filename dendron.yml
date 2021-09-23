@@ -24,15 +24,24 @@ lookupConfirmVaultOnCreate: false
 mermaid: true
 useKatex: true
 autoFoldFrontmatter: false
+usePrettyRefs: true
 dev:
     enableWebUI: true
     enablePreviewV2: true
+lookup:
+    note:
+        selectionType: selectionExtract
 journal:
     dailyDomain: daily
     name: journal
     dateFormat: y.MM.dd
     addBehavior: childOfDomain
     firstDayOfWeek: 1
+    dailyVault: kevin-private
+scratch:
+    name: scratch
+    dateFormat: y.MM.dd.HHmmss
+    addBehavior: asOwnDomain
 site:
     copyAssets: true
     siteHierarchies:
@@ -41,22 +50,35 @@ site:
         - blog
         - r
         - books
+        - podcasts
+        - seeds
         - proj
         - tags
     siteRootDir: docs
+    ga_tracking: "G-YS49D5ZK3X"
     usePrettyRefs: true
     logo: assets/images/bio-photo.jpg
     title: Kevin's Garden
-    description: Kevin is working on creating better tools for thought
+    description: Building hierarchal tools of thought @ dendron.so
     twitter: kevins8
     author: Kevin S Lin
     siteUrl: 'https://www.kevinslin.com'
+    usePrettyLinks: true
     duplicateNoteBehavior:
         action: useVault
         payload:
             - kevin-public
             - kevin-blog
             - dendron.templates
+            - dendron.git
+            - dendron.git
+            - dendron.services
+            - dendron.projects
+            - vaults
+            - private
+            - users
+            - dev
+            - aws
 initializeRemoteVaults: true
 workspaces:
     kevin-blog:
@@ -69,8 +91,5 @@ workspaces:
             url: 'https://github.com/kevinslin/kevin-public.git'
 seeds:
     dendron.templates: {}
-scratch:
-    name: scratch
-    dateFormat: y.MM.dd.HHmmss
-    addBehavior: asOwnDomain
-dendronVersion: 0.52.0
+dendronVersion: 0.56.1
+defaultInsertHierarchy: templates
