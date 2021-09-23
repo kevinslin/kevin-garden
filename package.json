@@ -1,0 +1,27 @@
+{
+  "name": "kevin-garden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "@dendronhq/dendron-cli": "^0.60.1-alpha.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinslin/kevin-garden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinslin/kevin-garden/issues"
+  },
+  "homepage": "https://github.com/kevinslin/kevin-garden#readme"
+}
