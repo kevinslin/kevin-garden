@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "dependencies": {
-    "@dendronhq/dendron-cli": "^0.60.1-alpha.3"
+    "@dendronhq/dendron-cli": "*"
   },
   "devDependencies": {},
   "scripts": {
