@@ -1,5 +1,49 @@
 version: 1
+maxPreviewsCached: 10
 vaults:
+    -
+        fsPath: ../../vaults/aws-vault
+        name: aws
+    -
+        fsPath: ../../vaults/dev-vault
+        name: dev
+    -
+        fsPath: ../org-workspace-v2/users/vault
+        name: users
+    -
+        fsPath: ../org-workspace-v2/repos/org-private
+        name: private
+        visibility: private
+    -
+        fsPath: ../../vaults/seed.projects
+        name: dendron.projects
+    -
+        fsPath: ../../vaults/seed.services/vault
+        name: dendron.services
+        sync: noCommit
+    -
+        fsPath: ../../vaults/seed-git/vault
+        name: dendron.git
+    -
+        fsPath: ../../notes
+        visibility: private
+        remote:
+            type: git
+            url: 'git@github.com:kevinslin/notes.git'
+    -
+        fsPath: ../../vaults/kevin-private
+        remote:
+            type: git
+            url: 'https://github.com/kevinslin/kevin-private.git'
+        name: kevin-private
+        visibility: private
+    -
+        fsPath: ../../vaults/people-vault
+        remote:
+            type: git
+            url: 'git@github.com:kevinslin/people-vault.git'
+        name: people
+        visibility: private
     -
         fsPath: templates
         seed: dendron.templates
@@ -19,7 +63,7 @@ useFMTitle: true
 useNoteTitleForLink: true
 noAutoCreateOnDefinition: true
 noLegacyNoteRef: true
-noXVaultWikiLink: true
+noXVaultWikiLink: false
 lookupConfirmVaultOnCreate: false
 mermaid: true
 useKatex: true
