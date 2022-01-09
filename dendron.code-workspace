@@ -1,24 +1,16 @@
 {
     "folders": [
         {
+            "path": "../org-workspace-v2/dendron-docs/vault",
+            "name": "dendron.docs"
+        },
+        {
             "path": "../../vaults/aws-vault",
             "name": "aws"
         },
         {
             "path": "../../vaults/dev-vault",
             "name": "dev"
-        },
-        {
-            "path": "../org-workspace-v2/users/vault",
-            "name": "users"
-        },
-        {
-            "path": "../org-workspace-v2/repos/org-private",
-            "name": "private"
-        },
-        {
-            "path": "../../vaults/seed.projects",
-            "name": "dendron.projects"
         },
         {
             "path": "../../vaults/seed.services/vault",
@@ -39,16 +31,16 @@
             "name": "people"
         },
         {
-            "path": "seeds/dendron.templates/templates",
-            "name": "dendron.templates"
-        },
-        {
             "path": "kevin-public/vault",
             "name": "kevin-public"
         },
         {
             "path": "kevin-blog/vault",
             "name": "kevin-blog"
+        },
+        {
+            "path": "../../dev",
+            "name": "dev-legacy"
         },
         {
             "path": "."
@@ -65,6 +57,7 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggest.showSnippets": true,
         "editor.tabCompletion": "on",
+        "workbench.editor.showTabs": true,
         "workbench.colorCustomizations": {
             "activityBar.activeBackground": "#1f6fd0",
             "activityBar.activeBorder": "#ee90bb",

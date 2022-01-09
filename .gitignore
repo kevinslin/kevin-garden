@@ -37,3 +37,10 @@ kevin-private
 
 ../../vaults/aws-vault
 .next
+
+../org-workspace-v2/admin
+
+../../dev
+
+../org-workspace-v2/dendron-docs/vault
+../org-workspace-v2/org-private

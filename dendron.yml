@@ -1,96 +1,17 @@
-version: 1
-maxPreviewsCached: 10
-vaults:
-    -
-        fsPath: ../../vaults/aws-vault
-        name: aws
-    -
-        fsPath: ../../vaults/dev-vault
-        name: dev
-    -
-        fsPath: ../org-workspace-v2/users/vault
-        name: users
-    -
-        fsPath: ../org-workspace-v2/repos/org-private
-        name: private
-        visibility: private
-    -
-        fsPath: ../../vaults/seed.projects
-        name: dendron.projects
-    -
-        fsPath: ../../vaults/seed.services/vault
-        name: dendron.services
-        sync: noCommit
-    -
-        fsPath: ../../vaults/seed-git/vault
-        name: dendron.git
-    -
-        fsPath: ../../notes
-        visibility: private
-        remote:
-            type: git
-            url: 'git@github.com:kevinslin/notes.git'
-    -
-        fsPath: ../../vaults/kevin-private
-        remote:
-            type: git
-            url: 'https://github.com/kevinslin/kevin-private.git'
-        name: kevin-private
-        visibility: private
-    -
-        fsPath: ../../vaults/people-vault
-        remote:
-            type: git
-            url: 'git@github.com:kevinslin/people-vault.git'
-        name: people
-        visibility: private
-    -
-        fsPath: templates
-        seed: dendron.templates
-        name: dendron.templates
-        sync: noCommit
-    -
-        fsPath: vault
-        workspace: kevin-public
-        name: kevin-public
-        sync: sync
-    -
-        fsPath: vault
-        workspace: kevin-blog
-        name: kevin-blog
-        sync: sync
+version: 4
 useFMTitle: true
 useNoteTitleForLink: true
-noAutoCreateOnDefinition: true
-noLegacyNoteRef: true
-noXVaultWikiLink: false
-lookupConfirmVaultOnCreate: false
 mermaid: true
 useKatex: true
-autoFoldFrontmatter: false
-usePrettyRefs: true
 dev:
     enableWebUI: true
     enablePreviewV2: true
-lookup:
-    note:
-        selectionType: selectionExtract
-journal:
-    dailyDomain: daily
-    name: journal
-    dateFormat: y.MM.dd
-    addBehavior: childOfDomain
-    firstDayOfWeek: 1
-    dailyVault: kevin-private
-scratch:
-    name: scratch
-    dateFormat: y.MM.dd.HHmmss
-    addBehavior: asOwnDomain
 site:
     copyAssets: true
     siteHierarchies:
         - home
         - daily
+        - til
         - blog
         - r
         - books
@@ -99,7 +20,7 @@ site:
         - proj
         - tags
     siteRootDir: docs
-    ga_tracking: "G-YS49D5ZK3X"
+    ga_tracking: G-YS49D5ZK3X
     usePrettyRefs: true
     logo: assets/images/bio-photo.jpg
     title: Kevin's Garden
@@ -123,17 +44,134 @@ site:
             - users
             - dev
             - aws
-initializeRemoteVaults: true
-workspaces:
-    kevin-blog:
-        remote:
-            type: git
-            url: 'https://github.com/kevinslin/kevin-blog.git'
-    kevin-public:
-        remote:
-            type: git
-            url: 'https://github.com/kevinslin/kevin-public.git'
-seeds:
-    dendron.templates: {}
-dendronVersion: 0.56.1
-defaultInsertHierarchy: templates
+            - admin
+            - dev-legacy
+            - dendron.docs
+            - private
+    siteLastModified: true
+    gh_edit_branch: main
+commands:
+    lookup:
+        note:
+            selectionMode: extract
+            confirmVaultOnCreate: false
+            leaveTrace: false
+            bubbleUpCreateNew: true
+            fuzzThreshold: 0.2
+    randomNote: {}
+    insertNote:
+        initialValue: templates
+    insertNoteLink:
+        aliasMode: none
+        enableMultiSelect: false
+    insertNoteIndex:
+        enableMarker: false
+workspace:
+    dendronVersion: 0.73.0
+    workspaces:
+        kevin-blog:
+            remote:
+                type: git
+                url: 'https://github.com/kevinslin/kevin-blog.git'
+        kevin-public:
+            remote:
+                type: git
+                url: 'https://github.com/kevinslin/kevin-public.git'
+    seeds:
+        dendron.templates: {}
+    vaults:
+        -
+            fsPath: ../org-workspace-v2/dendron-docs/vault
+            name: dendron.docs
+        -
+            fsPath: ../../vaults/aws-vault
+            name: aws
+        -
+            fsPath: ../../vaults/dev-vault
+            name: dev
+        -
+            fsPath: ../../vaults/seed.services/vault
+            name: dendron.services
+            sync: noCommit
+        -
+            fsPath: ../../vaults/seed-git/vault
+            name: dendron.git
+        -
+            fsPath: ../../notes
+            visibility: private
+            remote:
+                type: git
+                url: 'git@github.com:kevinslin/notes.git'
+        -
+            fsPath: ../../vaults/kevin-private
+            remote:
+                type: git
+                url: 'https://github.com/kevinslin/kevin-private.git'
+            name: kevin-private
+            visibility: private
+        -
+            fsPath: ../../vaults/people-vault
+            remote:
+                type: git
+                url: 'git@github.com:kevinslin/people-vault.git'
+            name: people
+            visibility: private
+        -
+            fsPath: vault
+            workspace: kevin-public
+            name: kevin-public
+            sync: sync
+        -
+            fsPath: vault
+            workspace: kevin-blog
+            name: kevin-blog
+            sync: sync
+    journal:
+        dailyDomain: daily
+        dailyVault: kevin-private
+        name: journal
+        dateFormat: y.MM.dd
+        addBehavior: childOfCurrent
+    scratch:
+        name: scratch
+        dateFormat: y.MM.dd.HHmmss
+        addBehavior: asOwnDomain
+    graph:
+        zoomSpeed: 1
+    enableAutoCreateOnDefinition: false
+    enableXVaultWikiLink: true
+    enableRemoteVaultInit: true
+    workspaceVaultSyncMode: noCommit
+    enableAutoFoldFrontmatter: false
+    maxPreviewsCached: 10
+    maxNoteLength: 204800
+    enableUserTags: true
+    enableHashTags: true
+    task:
+        name: ''
+        dateFormat: ''
+        addBehavior: childOfCurrent
+        statusSymbols:
+            '': ' '
+            wip: w
+            done: x
+            assigned: a
+            moved: m
+            blocked: b
+            delegated: l
+            dropped: d
+            pending: 'y'
+        prioritySymbols:
+            H: high
+            M: medium
+            L: low
+        todoIntegration: false
+        createTaskSelectionType: selection2link
+    enableEditorDecorations: true
+preview:
+    enableFMTitle: true
+    enableNoteTitleForLink: true
+    enableMermaid: true
+    enablePrettyRefs: true
+    enableKatex: true
+    automaticallyShowPreview: false
