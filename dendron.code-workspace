@@ -1,6 +1,13 @@
 {
     "folders": [
         {
+            "path": "dendron-docs/vault",
+            "name": "dendron.docs"
+        },
+        {
+            "path": "org-dev"
+        },
+        {
             "path": "../org-workspace-v2/dendron-docs/vault",
             "name": "dendron.docs"
         },

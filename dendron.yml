@@ -48,6 +48,8 @@ site:
             - dev-legacy
             - dendron.docs
             - private
+            - org-dev
+            - dendron.docs
     siteLastModified: true
     gh_edit_branch: main
 commands:
@@ -58,6 +60,7 @@ commands:
             leaveTrace: false
             bubbleUpCreateNew: true
             fuzzThreshold: 0.2
+            vaultSelectionModeOnCreate: smart
     randomNote: {}
     insertNote:
         initialValue: templates
@@ -67,7 +70,7 @@ commands:
     insertNoteIndex:
         enableMarker: false
 workspace:
-    dendronVersion: 0.73.0
+    dendronVersion: 0.76.1
     workspaces:
         kevin-blog:
             remote:
@@ -77,9 +80,19 @@ workspace:
             remote:
                 type: git
                 url: 'https://github.com/kevinslin/kevin-public.git'
+        dendron-docs:
+            remote:
+                type: git
+                url: 'git@github.com:dendronhq/dendron-docs.git'
     seeds:
         dendron.templates: {}
     vaults:
+        -
+            fsPath: org-dev
+            remote:
+                type: git
+                url: 'git@github.com:dendronhq/org-dev.git'
+            name: org-dev
         -
             fsPath: ../org-workspace-v2/dendron-docs/vault
             name: dendron.docs
@@ -148,9 +161,9 @@ workspace:
     enableUserTags: true
     enableHashTags: true
     task:
-        name: ''
-        dateFormat: ''
-        addBehavior: childOfCurrent
+        name: task
+        dateFormat: y.MM.dd
+        addBehavior: asOwnDomain
         statusSymbols:
             '': ' '
             wip: w
