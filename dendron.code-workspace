@@ -1,11 +1,15 @@
 {
     "folders": [
         {
+            "path": "../../Dropbox/Apps/Noah/workspaces/yc"
+        },
+        {
             "path": "dendron-docs/vault",
             "name": "dendron.docs"
         },
         {
-            "path": "org-dev"
+            "path": "org-dev",
+            "name": "dev"
         },
         {
             "path": "../org-workspace-v2/dendron-docs/vault",
@@ -16,22 +20,10 @@
             "name": "aws"
         },
         {
-            "path": "../../vaults/dev-vault",
-            "name": "dev"
+            "path": "notes"
         },
         {
-            "path": "../../vaults/seed.services/vault",
-            "name": "dendron.services"
-        },
-        {
-            "path": "../../vaults/seed-git/vault",
-            "name": "dendron.git"
-        },
-        {
-            "path": "../../notes"
-        },
-        {
-            "path": "../../vaults/kevin-private"
+            "path": "./kevin-private"
         },
         {
             "path": "../../vaults/people-vault",
@@ -66,28 +58,28 @@
         "editor.tabCompletion": "on",
         "workbench.editor.showTabs": true,
         "workbench.colorCustomizations": {
-            "activityBar.activeBackground": "#1f6fd0",
-            "activityBar.activeBorder": "#ee90bb",
-            "activityBar.background": "#1f6fd0",
-            "activityBar.foreground": "#e7e7e7",
-            "activityBar.inactiveForeground": "#e7e7e799",
-            "activityBarBadge.background": "#ee90bb",
-            "activityBarBadge.foreground": "#15202b",
-            "statusBar.background": "#1857a4",
+            "activityBar.activeBackground": "#3399ff",
+            "activityBar.activeBorder": "#bf0060",
+            "activityBar.background": "#3399ff",
+            "activityBar.foreground": "#15202b",
+            "activityBar.inactiveForeground": "#15202b99",
+            "activityBarBadge.background": "#bf0060",
+            "activityBarBadge.foreground": "#e7e7e7",
+            "statusBar.background": "#007fff",
             "statusBar.foreground": "#e7e7e7",
-            "statusBarItem.hoverBackground": "#1f6fd0",
-            "titleBar.activeBackground": "#1857a4",
+            "statusBarItem.hoverBackground": "#3399ff",
+            "titleBar.activeBackground": "#007fff",
             "titleBar.activeForeground": "#e7e7e7",
-            "titleBar.inactiveBackground": "#1857a499",
+            "titleBar.inactiveBackground": "#007fff99",
             "titleBar.inactiveForeground": "#e7e7e799",
-            "editorGroup.border": "#1f6fd0",
-            "panel.border": "#1f6fd0",
-            "sash.hoverBorder": "#1f6fd0",
-            "sideBar.border": "#1f6fd0",
-            "statusBarItem.remoteBackground": "#1857a4",
+            "editorGroup.border": "#3399ff",
+            "panel.border": "#3399ff",
+            "sash.hoverBorder": "#3399ff",
+            "sideBar.border": "#3399ff",
+            "statusBarItem.remoteBackground": "#007fff",
             "statusBarItem.remoteForeground": "#e7e7e7"
         },
-        "peacock.color": "#1857a4"
+        "peacock.color": "#007fff"
     },
     "extensions": {
         "recommendations": [

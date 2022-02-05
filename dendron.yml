@@ -34,22 +34,14 @@ site:
         payload:
             - kevin-public
             - kevin-blog
-            - dendron.templates
-            - dendron.git
-            - dendron.git
-            - dendron.services
-            - dendron.projects
             - vaults
             - private
             - users
-            - dev
-            - aws
-            - admin
             - dev-legacy
             - dendron.docs
             - private
             - org-dev
-            - dendron.docs
+            - yc
     siteLastModified: true
     gh_edit_branch: main
 commands:
@@ -88,42 +80,32 @@ workspace:
         dendron.templates: {}
     vaults:
         -
+            fsPath: ../../Dropbox/Apps/Noah/workspaces/yc
+            name: yc
+        -
             fsPath: org-dev
             remote:
                 type: git
                 url: 'git@github.com:dendronhq/org-dev.git'
-            name: org-dev
-        -
-            fsPath: ../org-workspace-v2/dendron-docs/vault
-            name: dendron.docs
-        -
-            fsPath: ../../vaults/aws-vault
-            name: aws
-        -
-            fsPath: ../../vaults/dev-vault
             name: dev
         -
-            fsPath: ../../vaults/seed.services/vault
-            name: dendron.services
-            sync: noCommit
+            fsPath: ../org-workspace/dendron-docs/vault
+            name: dendron.docs
         -
-            fsPath: ../../vaults/seed-git/vault
-            name: dendron.git
-        -
-            fsPath: ../../notes
+            fsPath: notes
             visibility: private
             remote:
                 type: git
                 url: 'git@github.com:kevinslin/notes.git'
         -
-            fsPath: ../../vaults/kevin-private
+            fsPath: kevin-private
             remote:
                 type: git
                 url: 'https://github.com/kevinslin/kevin-private.git'
             name: kevin-private
             visibility: private
         -
-            fsPath: ../../vaults/people-vault
+            fsPath: people-vault
             remote:
                 type: git
                 url: 'git@github.com:kevinslin/people-vault.git'
