@@ -6,11 +6,13 @@ frontend:
         - yarn
     build:
       commands: 
-        - "(test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git clean -f && git pull) || (echo 'init dendron next' && npx dendron publish init)"
-        - "echo 'install deps...' && cd .next && yarn && cd .."
-        - "echo 'initialize workspace' && npx dendron workspace init"
-        - "echo 'build notes...' && npx dendron publish build"
-        - "echo 'export...' && cd .next && yarn export"
+        - "(test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git clean -f && git pull && yarn && cd ..) || (echo 'init dendron next' && yarn dendron publish init)"
+        - "yarn dendron publish export"
+        # - "(test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git clean -f && git pull) || (echo 'init dendron next' && npx dendron publish init)"
+        # - "echo 'install deps...' && cd .next && yarn && cd .."
+        # - "echo 'initialize workspace' && npx dendron workspace init"
+        # - "echo 'build notes...' && npx dendron publish build"
+        # - "echo 'export...' && cd .next && yarn export"
   artifacts:
     baseDirectory: .next/out
     files:
@@ -21,3 +23,27 @@ frontend:
       - .next/node_modules/**/*
       - .next/.next/**/*
       - .next/.git/**/*
+
+    # - name: Install dependencies
+    #   run: yarn
+
+    # - name: Restore Next cache
+    #   uses: actions/cache@v2
+    #   with:
+    #     path: .next/.next/cache
+    #     # Generate a new cache whenever packages or source files change.
+    #     key: ${{ runner.os }}-nextjs-${{ hashFiles('.next/yarn.lock', '.next/package-lock.json') }}-${{ hashFiles('.next/**.[jt]s', '.next/**.[jt]sx') }}
+
+    # - name: Initialize or pull nextjs template
+    #   run: "(test -d .next) && (echo 'updating dendron next...' && cd .next && git reset --hard && git clean -f && git pull && yarn && cd ..) || (echo 'init dendron next' && yarn dendron publish init)"
+
+    # - name: Export notes
+    #   run: yarn dendron publish export --target github --yes
+
+    # - name: Deploy site
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_branch: pages
+    #     publish_dir: docs/
+    #     force_orphan: true
