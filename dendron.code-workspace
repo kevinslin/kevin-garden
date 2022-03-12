@@ -1,6 +1,13 @@
 {
     "folders": [
         {
+            "path": "highlights"
+        },
+        {
+            "path": "dendron-users/vault",
+            "name": "users"
+        },
+        {
             "path": "../../Dropbox/Apps/Noah/workspaces/yc"
         },
         {
@@ -79,7 +86,8 @@
             "statusBarItem.remoteBackground": "#007fff",
             "statusBarItem.remoteForeground": "#e7e7e7"
         },
-        "peacock.color": "#007fff"
+        "peacock.color": "#007fff",
+        "gitdoc.enabled": true
     },
     "extensions": {
         "recommendations": [

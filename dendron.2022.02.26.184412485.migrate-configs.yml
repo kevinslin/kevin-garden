@@ -1,4 +1,4 @@
-version: 5
+version: 4
 dev:
     enableWebUI: true
     enablePreviewV2: true
@@ -20,9 +20,8 @@ commands:
         enableMultiSelect: false
     insertNoteIndex:
         enableMarker: false
-    copyNoteLink: {}
 workspace:
-    dendronVersion: 0.83.0
+    dendronVersion: 0.76.1
     workspaces:
         kevin-blog:
             remote:
@@ -43,8 +42,6 @@ workspace:
     seeds:
         dendron.templates: {}
     vaults:
-        -
-            fsPath: highlights
         -
             fsPath: vault
             workspace: dendron-users
@@ -141,8 +138,6 @@ preview:
     enablePrettyRefs: true
     enableKatex: true
     automaticallyShowPreview: false
-    enableFrontmatterTags: true
-    enableHashesForFMTags: false
 publishing:
     enableFMTitle: true
     enableNoteTitleForLink: true
@@ -159,8 +154,6 @@ publishing:
     seo:
         title: Dendron
         description: Personal Knowledge Space
-        author: Kevin S Lin
-        twitter: kevins8
     github:
         enableEditLink: true
         editLinkText: Edit this page on GitHub
@@ -171,10 +164,33 @@ publishing:
     enableHashesForFMTags: false
     enableRandomlyColoredTags: true
     enablePrettyLinks: true
-    ga:
-        tracking: G-YS49D5ZK3X
-    logoPath: assets/images/bio-photo.jpg
+useFMTitle: true
+useNoteTitleForLink: true
+mermaid: true
+useKatex: true
+site:
+    copyAssets: true
+    siteHierarchies:
+        - home
+        - daily
+        - til
+        - blog
+        - r
+        - books
+        - podcasts
+        - seeds
+        - proj
+        - tags
+    siteRootDir: docs
+    ga_tracking: G-YS49D5ZK3X
+    usePrettyRefs: true
+    logo: assets/images/bio-photo.jpg
+    title: Kevin's Garden
+    description: Building hierarchal tools of thought @ dendron.so
+    twitter: kevins8
+    author: Kevin S Lin
     siteUrl: 'https://www.kevinslin.com'
+    usePrettyLinks: true
     duplicateNoteBehavior:
         action: useVault
         payload:
@@ -189,4 +205,5 @@ publishing:
             - org-dev
             - yc
             - users
-            - highlights
+    siteLastModified: true
+    gh_edit_branch: main
