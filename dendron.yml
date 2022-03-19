@@ -26,19 +26,19 @@ workspace:
         kevin-blog:
             remote:
                 type: git
-                url: 'https://github.com/kevinslin/kevin-blog.git'
+                url: https://github.com/kevinslin/kevin-blog.git
         kevin-public:
             remote:
                 type: git
-                url: 'https://github.com/kevinslin/kevin-public.git'
+                url: https://github.com/kevinslin/kevin-public.git
         dendron-docs:
             remote:
                 type: git
-                url: 'git@github.com:dendronhq/dendron-docs.git'
+                url: git@github.com:dendronhq/dendron-docs.git
         dendron-users:
             remote:
                 type: git
-                url: 'git@github.com:dendronhq/dendron-users.git'
+                url: git@github.com:dendronhq/dendron-users.git
     seeds:
         dendron.templates: {}
     vaults:
@@ -56,7 +56,7 @@ workspace:
             fsPath: org-dev
             remote:
                 type: git
-                url: 'git@github.com:dendronhq/org-dev.git'
+                url: git@github.com:dendronhq/org-dev.git
             name: dev
         -
             fsPath: ../org-workspace/dendron-docs/vault
@@ -66,19 +66,19 @@ workspace:
             visibility: private
             remote:
                 type: git
-                url: 'git@github.com:kevinslin/notes.git'
+                url: git@github.com:kevinslin/notes.git
         -
             fsPath: kevin-private
             remote:
                 type: git
-                url: 'https://github.com/kevinslin/kevin-private.git'
+                url: https://github.com/kevinslin/kevin-private.git
             name: kevin-private
             visibility: private
         -
             fsPath: people-vault
             remote:
                 type: git
-                url: 'git@github.com:kevinslin/people-vault.git'
+                url: git@github.com:kevinslin/people-vault.git
             name: people
             visibility: private
         -
@@ -173,7 +173,7 @@ publishing:
     ga:
         tracking: G-YS49D5ZK3X
     logoPath: assets/images/bio-photo.jpg
-    siteUrl: 'https://www.kevinslin.com'
+    siteUrl: https://www.kevinslin.com
     duplicateNoteBehavior:
         action: useVault
         payload:
