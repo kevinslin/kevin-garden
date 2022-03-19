@@ -1,6 +1,5 @@
 version: 5
 dev:
-    enableWebUI: true
     enablePreviewV2: true
     enableExportPodV2: true
 commands:
