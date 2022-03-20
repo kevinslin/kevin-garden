@@ -43,7 +43,8 @@ workspace:
         dendron.templates: {}
     vaults:
         -
-            fsPath: highlights
+            fsPath: vault-highlights/Readwise
+            name: highlights
         -
             fsPath: vault
             workspace: dendron-users

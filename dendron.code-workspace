@@ -1,13 +1,14 @@
 {
     "folders": [
         {
-            "path": "highlights"
+            "path": "vault-highlights/Readwise",
+            "name": "highlights"
         },
         {
             "path": "dendron-users/vault",
             "name": "users"
-	},
-	{
+        },
+        {
             "path": "vault-highlights",
             "name": "highlights"
         },
