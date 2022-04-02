@@ -26,11 +26,11 @@ workspace:
         kevin-blog:
             remote:
                 type: git
-                url: https://github.com/kevinslin/kevin-blog.git
+                url: git@github.com:kevinslin/kevin-blog.git
         kevin-public:
             remote:
                 type: git
-                url: https://github.com/kevinslin/kevin-public.git
+                url: git@github.com:kevinslin/kevin-public.git
         dendron-docs:
             remote:
                 type: git
