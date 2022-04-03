@@ -43,6 +43,10 @@ workspace:
         dendron.templates: {}
     vaults:
         -
+            fsPath: vault
+            name: dendron-docs
+            workspace: dendron-docs
+        -
             fsPath: vault-highlights/Readwise
             name: highlights
         -
@@ -50,18 +54,12 @@ workspace:
             workspace: dendron-users
             name: users
             sync: sync
-        # -
-        #     fsPath: ../../Dropbox/Apps/Noah/workspaces/yc
-        #     name: yc
         -
             fsPath: org-dev
             remote:
                 type: git
                 url: git@github.com:dendronhq/org-dev.git
             name: dev
-        # -
-        #     fsPath: ../org-workspace/dendron-docs/vault
-        #     name: dendron.docs
         -
             fsPath: notes
             visibility: private
@@ -190,3 +188,4 @@ publishing:
             - yc
             - users
             - highlights
+            - dendron-docs
