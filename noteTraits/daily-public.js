@@ -12,9 +12,14 @@ module.exports = {
    */
   OnWillCreate: {
     setNameModifier(props) {
+      const today = new Date();
+      const dd = String(today.getDate()).padStart(2, '0');
+      const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      const yyyy = today.getFullYear();
+      const fullDateWithDots = `${yyyy}.${mm}.${dd}`
+      const namePath = ["daily", "public", fullDateWithDots];
       return {
-        name: [props.currentNoteName, props.selectedText, props.clipboard].join(','),
-        promptUserForModification: true
+        name: namePath.join('.'),
       };
     }
   },
@@ -23,7 +28,12 @@ module.exports = {
    */
   OnCreate: {
     setTitle(props) {
-      return [props.currentNoteName, props.selectedText, props.clipboard].join(',');
+      const today = new Date();
+      const dd = String(today.getDate()).padStart(2, '0');
+      const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      const yyyy = today.getFullYear();
+      const fullDateWithDash = `${yyyy}-${mm}-${dd}`
+      return fullDateWithDash;
     }
   }
 }

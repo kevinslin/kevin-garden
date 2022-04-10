@@ -85,6 +85,8 @@ workspace:
             workspace: kevin-public
             name: kevin-public
             sync: sync
+            siteUrl: https://kevinslin.com
+            siteIndex: home
         -
             fsPath: vault
             workspace: kevin-blog
@@ -151,8 +153,6 @@ publishing:
     siteHierarchies:
         - root
     writeStubs: false
-    enableContainers: false
-    generateChangelog: false
     siteRootDir: docs
     seo:
         title: Dendron
