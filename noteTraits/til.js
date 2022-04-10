@@ -3,6 +3,7 @@
  * Note: you must reload your window after each file change for it to take into
  * effect. We are working to improve this behavior.
  */
+const kebabCase = (string) => string.replace(/[\s_]+/g, '-').toLowerCase();
 module.exports = {
   /**
    * Specify behavior to modify the name of the note. If
@@ -12,8 +13,14 @@ module.exports = {
    */
   OnWillCreate: {
     setNameModifier(props) {
+      const today = new Date();
+      const dd = String(today.getDate()).padStart(2, '0');
+      const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      const yyyy = today.getFullYear();
+      const fullDateWithDots = `${yyyy}.${mm}.${dd}`
+      const namePath = ["til", "journal", fullDateWithDots, kebabCase(props.clipboard)];
       return {
-        name: [props.currentNoteName, props.selectedText, props.clipboard].join(','),
+        name: namePath.join("."),
         promptUserForModification: true
       };
     }
@@ -23,7 +30,7 @@ module.exports = {
    */
   OnCreate: {
     setTitle(props) {
-      return [props.currentNoteName, props.selectedText, props.clipboard].join(',');
+      return props.clipboard
     }
   }
 }
