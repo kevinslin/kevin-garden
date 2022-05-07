@@ -84,14 +84,14 @@ workspace:
             fsPath: vault
             workspace: kevin-public
             name: kevin-public
-            sync: sync
+            sync: noCommit
             siteUrl: https://kevinslin.com
             siteIndex: home
         -
             fsPath: vault
             workspace: kevin-blog
             name: kevin-blog
-            sync: sync
+            sync: noCommit
     journal:
         dailyDomain: daily
         dailyVault: kevin-private
@@ -134,6 +134,7 @@ workspace:
         todoIntegration: false
         createTaskSelectionType: selection2link
     enableEditorDecorations: true
+    enableFullHierarchyNoteTitle: false
 preview:
     enableFMTitle: true
     enableNoteTitleForLink: true

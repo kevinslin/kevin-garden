@@ -62,13 +62,10 @@
         "files.autoSave": "onFocusChange",
         "pasteImage.path": "${currentFileDir}/assets/images",
         "pasteImage.prefix": "/",
-        "markdown-preview-enhanced.enableWikiLinkSyntax": true,
-        "markdown-preview-enhanced.wikiLinkFileExtension": ".md",
         "editor.snippetSuggestions": "inline",
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggest.showSnippets": true,
         "editor.tabCompletion": "on",
-        "workbench.editor.showTabs": true,
         "workbench.colorCustomizations": {
             "activityBar.activeBackground": "#3399ff",
             "activityBar.activeBorder": "#bf0060",
@@ -89,7 +86,12 @@
             "statusBarItem.remoteForeground": "#e7e7e7"
         },
         "peacock.color": "#007fff",
-        "gitdoc.enabled": true
+        "gitdoc.enabled": true,
+        "explorer.experimental.fileNesting.enabled": true,
+        "explorer.experimental.fileNesting.patterns": {
+            "package.json": "package-lock.json, yarn.lock",
+            "*": "${basename}.*.md",
+        }
     },
     "extensions": {
         "recommendations": [

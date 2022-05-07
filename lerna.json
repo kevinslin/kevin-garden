@@ -1,0 +1,15 @@
+{
+  "packages": [
+"vault-highlights/Readwise",
+"dendron-users/vault",
+"vault-highlights",
+"dendron-docs/vault",
+"org-dev",
+"notes",
+"kevin-private",
+"people-vault",
+"kevin-public/vault",
+"kevin-blog/vault"
+  ],
+  "version": "0.0.0"
+}

@@ -9,7 +9,9 @@
   "dependencies": {
     "@dendronhq/dendron-cli": "^0.80.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

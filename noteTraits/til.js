@@ -3,7 +3,7 @@
  * Note: you must reload your window after each file change for it to take into
  * effect. We are working to improve this behavior.
  */
-const kebabCase = (string) => string.replace(/[\s_]+/g, '-').toLowerCase();
+const kebabCase = (string) => string.replace(/[\s_:]+/g, '-').toLowerCase();
 module.exports = {
   /**
    * Specify behavior to modify the name of the note. If
