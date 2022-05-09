@@ -12,25 +12,25 @@
             "path": "vault-highlights",
             "name": "highlights"
         },
-        {
-            "path": "../../Dropbox/Apps/Noah/workspaces/yc"
-        },
-        {
-            "path": "dendron-docs/vault",
-            "name": "dendron.docs"
-        },
+        // {
+        //     "path": "../../Dropbox/Apps/Noah/workspaces/yc"
+        // },
+        // {
+        //     "path": "dendron-docs/vault",
+        //     "name": "dendron.docs"
+        // },
         {
             "path": "org-dev",
             "name": "dev"
         },
-        {
-            "path": "../org-workspace-v2/dendron-docs/vault",
-            "name": "dendron.docs"
-        },
-        {
-            "path": "../../vaults/aws-vault",
-            "name": "aws"
-        },
+        // {
+        //     "path": "../org-workspace-v2/dendron-docs/vault",
+        //     "name": "dendron.docs"
+        // },
+        // {
+        //     "path": "../../vaults/aws-vault",
+        //     "name": "aws"
+        // },
         {
             "path": "notes"
         },
@@ -38,7 +38,7 @@
             "path": "./kevin-private"
         },
         {
-            "path": "../../vaults/people-vault",
+            "path": "people-vault",
             "name": "people"
         },
         {
@@ -49,10 +49,10 @@
             "path": "kevin-blog/vault",
             "name": "kevin-blog"
         },
-        {
-            "path": "../../dev",
-            "name": "dev-legacy"
-        },
+        // {
+        //     "path": "../../dev",
+        //     "name": "dev-legacy"
+        // },
         {
             "path": "."
         }
