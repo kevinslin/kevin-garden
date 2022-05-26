@@ -55,12 +55,6 @@ workspace:
             name: users
             sync: sync
         -
-            fsPath: org-dev
-            remote:
-                type: git
-                url: git@github.com:dendronhq/org-dev.git
-            name: dev
-        -
             fsPath: notes
             visibility: private
             remote:
@@ -185,7 +179,6 @@ publishing:
             - dev-legacy
             - dendron.docs
             - private
-            - org-dev
             - yc
             - users
             - highlights
