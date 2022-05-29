@@ -49,10 +49,6 @@
             "path": "kevin-blog/vault",
             "name": "kevin-blog"
         },
-        // {
-        //     "path": "../../dev",
-        //     "name": "dev-legacy"
-        // },
         {
             "path": "."
         }
@@ -66,6 +62,7 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggest.showSnippets": true,
         "editor.tabCompletion": "on",
+        "workbench.editor.showTabs": true,
         "workbench.colorCustomizations": {
             "activityBar.activeBackground": "#3399ff",
             "activityBar.activeBorder": "#bf0060",
@@ -91,7 +88,8 @@
         "explorer.experimental.fileNesting.patterns": {
             "package.json": "package-lock.json, yarn.lock",
             "*": "${basename}.*.md",
-        }
+        },
+        "git.ignoreLimitWarning": true
     },
     "extensions": {
         "recommendations": [

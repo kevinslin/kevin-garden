@@ -43,6 +43,8 @@ workspace:
         dendron.templates: {}
     vaults:
         -
+            fsPath: dayone
+        -
             fsPath: vault
             name: dendron-docs
             workspace: dendron-docs
@@ -60,6 +62,7 @@ workspace:
             remote:
                 type: git
                 url: git@github.com:kevinslin/notes.git
+            selfContained: true
         -
             fsPath: kevin-private
             remote:
@@ -67,6 +70,7 @@ workspace:
                 url: git@github.com:kevinslin/kevin-private.git
             name: kevin-private
             visibility: private
+            selfContained: true
         -
             fsPath: people-vault
             remote:
@@ -74,6 +78,7 @@ workspace:
                 url: git@github.com:kevinslin/people-vault.git
             name: people
             visibility: private
+            selfContained: true
         -
             fsPath: vault
             workspace: kevin-public
@@ -127,8 +132,13 @@ workspace:
             L: low
         todoIntegration: false
         createTaskSelectionType: selection2link
+        taskCompleteStatus:
+            - done
+            - x
     enableEditorDecorations: true
     enableFullHierarchyNoteTitle: false
+    enableHandlebarTemplates: false
+    templateHierarchy: template
 preview:
     enableFMTitle: true
     enableNoteTitleForLink: true
@@ -183,3 +193,5 @@ publishing:
             - users
             - highlights
             - dendron-docs
+            - dayone
+    enableTaskNotes: true
