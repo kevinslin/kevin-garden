@@ -43,14 +43,18 @@ workspace:
         dendron.templates: {}
     vaults:
         -
+            fsPath: git
+            selfContained: true
+        -
             fsPath: dayone
         -
             fsPath: vault
             name: dendron-docs
             workspace: dendron-docs
         -
-            fsPath: vault-highlights/Readwise
+            fsPath: vault-highlights
             name: highlights
+            selfContained: true
         -
             fsPath: vault
             workspace: dendron-users
@@ -103,6 +107,7 @@ workspace:
         addBehavior: asOwnDomain
     graph:
         zoomSpeed: 1
+        createStub: false
     enableAutoCreateOnDefinition: false
     enableXVaultWikiLink: true
     enableRemoteVaultInit: true
@@ -194,4 +199,5 @@ publishing:
             - highlights
             - dendron-docs
             - dayone
+            - git
     enableTaskNotes: true
