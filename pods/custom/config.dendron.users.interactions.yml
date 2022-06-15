@@ -1,0 +1,17 @@
+podId: dendron.users.interactions
+description: interactions with people
+exportScope: Note
+podType: AirtableExportV2
+connectionId: self
+baseId: appZNzzCHKbsGJmUp
+tableName: tblqIWvPy18I2Q61z
+sourceFieldMapping:
+  {
+    DendronId: { type: string, to: "id" },
+    Inbound: {type: boolean, to: custom.inbound },
+    Notes: { type: string, to: body },
+    Person: { type: "linkedRecord", filter: "people.*", podId: "people" },
+    Status: { type: singleSelect, to: custom.status },
+    # Kind: { type: "multiSelect", filter: "tags.kind.*", to: "tags" },
+    # "Source.URL": {to: custom.source.url, type: string},
+  }

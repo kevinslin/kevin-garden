@@ -1,0 +1,49 @@
+# description: Where to export to
+# type: string
+# required: true
+dest: TODO
+
+# description: should body be included
+# type: boolean
+# includeBody: true
+
+# description: should stubs be included
+# type: boolean
+# includeStubs: TODO
+
+# description: undefined
+# type: array
+# ignore: TODO
+
+# description: include or exclude certain vaults
+# type: object
+# vaults: TODO
+
+# description: Name of the airtable
+# type: string
+# required: true
+tableName: TODO
+
+# description: The src .md file from where to start the sync
+# type: string
+# required: true
+srcHierarchy: TODO
+
+# description: Api key for airtable
+# type: string
+# required: true
+apiKey: TODO
+
+# description:  base Id of airtable base
+# type: string
+# required: true
+baseId: TODO
+
+# description: turn off checkpointing
+# type: boolean
+# noCheckpointing: TODO
+
+# description: mapping of airtable fields with the note eg: {Created On: created, Notes: body}
+# type: object
+# required: true
+srcFieldMapping: TODO

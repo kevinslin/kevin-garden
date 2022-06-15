@@ -1,0 +1,49 @@
+podId: people
+exportScope: Note
+podType: AirtableExportV2
+connectionId: self
+baseId: appZNzzCHKbsGJmUp
+tableName: tbli38cd5FpJouq9z
+filters:
+  {
+    fname:
+      [
+        people,
+        # people.ref,
+        # people.ref.*,
+        # people.temp,
+        # people.temp.*,
+        # people.cand,
+        # people.cand.*,
+        # people.admin,
+        # people.admin.*,
+        # people.journal,
+        # people.journal.*,
+        # people.ent,
+        # people.ent.*,
+      ],
+  }
+sourceFieldMapping: {
+    # --- Default
+    Name: { type: string, to: title },
+    # Description: { type: string, to: desc },
+    Updated: { to: updated, type: date },
+    Created: { to: created, type: date },
+    DendronId: { type: string, to: "id" },
+
+    # --- Contact
+    Email: { type: string, to: custom.contact.email },
+
+    # --- Discovery
+    # Country: { type: string, to: custom.country },
+    # Source: { type: "linkedRecord", filter: "tags.dendron.source.*" },
+    # Role: { type: "linkedRecord", filter: "tags.dendron.role.*" },
+    # SourceDetail: { type: "string", to: "custom.dendron.sourceDetail" },
+    # Kind: { type: "multiSelect", filter: "tags.kind.user.*", to: "tags" },
+
+    # --- Engagement
+    Distance: { type: number, to: custom.distance },
+    # Level: { type: "singleSelect", filter: "tags.dendron.lvl*", to: "tags" },
+
+    # --- Profile
+  }
