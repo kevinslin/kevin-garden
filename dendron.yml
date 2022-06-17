@@ -47,6 +47,10 @@ workspace:
             selfContained: true
         -
             fsPath: dayone
+            remote:
+                type: git
+                url: git@github.com:kevinslin/dayone.git
+
         -
             fsPath: vault
             name: dendron-docs
