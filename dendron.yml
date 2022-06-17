@@ -43,9 +43,6 @@ workspace:
         dendron.templates: {}
     vaults:
         -
-            fsPath: git
-            selfContained: true
-        -
             fsPath: dayone
             remote:
                 type: git
