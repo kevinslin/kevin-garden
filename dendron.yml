@@ -35,10 +35,6 @@ workspace:
             remote:
                 type: git
                 url: git@github.com:dendronhq/dendron-docs.git
-        dendron-users:
-            remote:
-                type: git
-                url: git@github.com:dendronhq/dendron-users.git
     seeds:
         dendron.templates: {}
     vaults:
@@ -57,10 +53,9 @@ workspace:
             name: highlights
             selfContained: true
         -
-            fsPath: vault
-            workspace: dendron-users
+            fsPath: ../org-workspace/dendron-users
             name: users
-            sync: sync
+            selfContained: true
         -
             fsPath: notes
             visibility: private
