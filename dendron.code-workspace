@@ -1,0 +1,108 @@
+{
+    "folders": [
+        {
+            "path": "vault-highlights/Readwise",
+            "name": "highlights"
+        },
+        {
+            "path": "dendron-users/vault",
+            "name": "users"
+        },
+        {
+            "path": "vault-highlights",
+            "name": "highlights"
+        },
+        // {
+        //     "path": "../../Dropbox/Apps/Noah/workspaces/yc"
+        // },
+        // {
+        //     "path": "dendron-docs/vault",
+        //     "name": "dendron.docs"
+        // },
+        {
+            "path": "org-dev",
+            "name": "dev"
+        },
+        // {
+        //     "path": "../org-workspace-v2/dendron-docs/vault",
+        //     "name": "dendron.docs"
+        // },
+        // {
+        //     "path": "../../vaults/aws-vault",
+        //     "name": "aws"
+        // },
+        {
+            "path": "notes"
+        },
+        {
+            "path": "./kevin-private"
+        },
+        {
+            "path": "people-vault",
+            "name": "people"
+        },
+        {
+            "path": "kevin-public/vault",
+            "name": "kevin-public"
+        },
+        {
+            "path": "kevin-blog/vault",
+            "name": "kevin-blog"
+        },
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "dendron.rootDir": ".",
+        "files.autoSave": "onFocusChange",
+        "pasteImage.path": "${currentFileDir}/assets/images",
+        "pasteImage.prefix": "/",
+        "editor.snippetSuggestions": "inline",
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggest.showSnippets": true,
+        "editor.tabCompletion": "on",
+        "workbench.editor.showTabs": true,
+        "workbench.colorCustomizations": {
+            "activityBar.activeBackground": "#3399ff",
+            "activityBar.activeBorder": "#bf0060",
+            "activityBar.background": "#3399ff",
+            "activityBar.foreground": "#15202b",
+            "activityBar.inactiveForeground": "#15202b99",
+            "activityBarBadge.background": "#bf0060",
+            "activityBarBadge.foreground": "#e7e7e7",
+            "statusBar.background": "#007fff",
+            "statusBar.foreground": "#e7e7e7",
+            "statusBarItem.hoverBackground": "#3399ff",
+            "titleBar.activeBackground": "#007fff",
+            "titleBar.activeForeground": "#e7e7e7",
+            "titleBar.inactiveBackground": "#007fff99",
+            "titleBar.inactiveForeground": "#e7e7e799",
+            "sash.hoverBorder": "#3399ff",
+            "statusBarItem.remoteBackground": "#007fff",
+            "statusBarItem.remoteForeground": "#e7e7e7"
+        },
+        "peacock.color": "#007fff",
+        "gitdoc.enabled": true,
+        "explorer.experimental.fileNesting.enabled": true,
+        "explorer.experimental.fileNesting.patterns": {
+            "package.json": "package-lock.json, yarn.lock",
+            "*": "${basename}.*.md",
+        },
+        "git.ignoreLimitWarning": true
+    },
+    "extensions": {
+        "recommendations": [
+            "dendron.dendron-paste-image",
+            "dendron.dendron-markdown-shortcuts",
+            "dendron.dendron-markdown-preview-enhanced"
+        ],
+        "unwantedRecommendations": [
+            "dendron.dendron-markdown-links",
+            "dendron.dendron-markdown-notes",
+            "shd101wyy.markdown-preview-enhanced",
+            "kortina.vscode-markdown-notes",
+            "mushan.vscode-paste-image"
+        ]
+    }
+}
