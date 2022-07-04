@@ -20,6 +20,7 @@ commands:
     insertNoteIndex:
         enableMarker: false
     copyNoteLink: {}
+    templateHierarchy: template
 workspace:
     dendronVersion: 0.83.0
     workspaces:
@@ -31,23 +32,17 @@ workspace:
             remote:
                 type: git
                 url: git@github.com:kevinslin/kevin-public.git
-        dendron-docs:
-            remote:
-                type: git
-                url: git@github.com:dendronhq/dendron-docs.git
     seeds:
         dendron.templates: {}
     vaults:
+        -
+            fsPath: ../org-workspace/dendron-docs
+            selfContained: true
         -
             fsPath: dayone
             remote:
                 type: git
                 url: git@github.com:kevinslin/dayone.git
-
-        -
-            fsPath: vault
-            name: dendron-docs
-            workspace: dendron-docs
         -
             fsPath: vault-highlights
             name: highlights
@@ -193,7 +188,7 @@ publishing:
             - yc
             - users
             - highlights
-            - dendron-docs
             - dayone
             - git
+            - dendron-docs
     enableTaskNotes: true

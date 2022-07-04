@@ -1,6 +1,9 @@
 {
     "folders": [
         {
+            "path": "../org-workspace/dendron-docs"
+        },
+        {
             "path": "vault-highlights/Readwise",
             "name": "highlights"
         },
@@ -12,25 +15,10 @@
             "path": "vault-highlights",
             "name": "highlights"
         },
-        // {
-        //     "path": "../../Dropbox/Apps/Noah/workspaces/yc"
-        // },
-        // {
-        //     "path": "dendron-docs/vault",
-        //     "name": "dendron.docs"
-        // },
         {
             "path": "org-dev",
             "name": "dev"
         },
-        // {
-        //     "path": "../org-workspace-v2/dendron-docs/vault",
-        //     "name": "dendron.docs"
-        // },
-        // {
-        //     "path": "../../vaults/aws-vault",
-        //     "name": "aws"
-        // },
         {
             "path": "notes"
         },
@@ -87,7 +75,7 @@
         "explorer.experimental.fileNesting.enabled": true,
         "explorer.experimental.fileNesting.patterns": {
             "package.json": "package-lock.json, yarn.lock",
-            "*": "${basename}.*.md",
+            "*": "${basename}.*.md"
         },
         "git.ignoreLimitWarning": true
     },
